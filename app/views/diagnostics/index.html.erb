@@ -1,0 +1,9 @@
+<div class="container">
+  <%= link_to "New Diagnostic", new_diagnostic_path %>
+  <h3>Diagnostics</h3>
+  <ul>
+  <% @diagnostics.each do |diagnostic| %>
+    <li><%= diagnostic.inspect %></li>
+  <% end %>
+  </ul>
+</div>
