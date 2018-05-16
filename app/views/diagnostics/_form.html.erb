@@ -2,7 +2,8 @@
   <%= simple_form_for @diagnostic do |f| %>
     <%= f.input :description, as: :text, hint: "Enter notes" %>
     <%= f.input :tags, as: :text, hint: "add tags to this analysis" %>
-    
+    <%= f.input :photo %>
+    <%= f.input :photo_cache, as: :hidden %>
     <%= f.button :submit, data: { disable_with: "Queueing Diagnostic..." }, class: "btn btn-primary btn-lg btn-block" %>
   <% end %>
 </div>
